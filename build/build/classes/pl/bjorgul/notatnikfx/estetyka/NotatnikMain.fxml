@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane styleClass="styl.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.bjorgul.notatnikfx.kontrolery.NotatnikMain">
+	<children>
+		<MenuBar layoutX="168.0" layoutY="2.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="29.0" prefWidth="494.0" AnchorPane.bottomAnchor="269.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<menus>
+				<Menu mnemonicParsing="false" text="File">
+					<items>
+						<MenuItem fx:id="menuNowy" mnemonicParsing="false" text="New file" />
+						<MenuItem fx:id="menuOtworz" mnemonicParsing="false" text="Open file" />
+						<MenuItem fx:id="menuZapisz" mnemonicParsing="false" text="Save file" />
+
+						<SeparatorMenuItem mnemonicParsing="false" />
+						<MenuItem fx:id="menuWyjdz" mnemonicParsing="false" text="Exit" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Edit">
+					<items>
+						<MenuItem fx:id="menuWytnij" mnemonicParsing="false" text="Cut" />
+						<MenuItem fx:id="menuKopiuj" mnemonicParsing="false" text="Copy" />
+						<MenuItem fx:id="menuWklej" mnemonicParsing="false" text="Paste" />
+						<MenuItem fx:id="menuUsun" mnemonicParsing="false" text="Delete" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Format">
+					<items>
+						<MenuItem fx:id="menuRozmiar" mnemonicParsing="false" text="Font size" />
+                  <MenuItem fx:id="menuCzcionka" mnemonicParsing="false" text="Font" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="View">
+					<items>
+						<CheckMenuItem fx:id="menuZawijanie" mnemonicParsing="false" text="Word wrap" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Help">
+					<items>
+						<MenuItem fx:id="menuProgram" mnemonicParsing="false" text="About BJORGUL.NOTE" />
+					</items>
+				</Menu>
+			</menus>
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+		</MenuBar>
+		<AnchorPane layoutX="14.0" layoutY="297.0" />
+		<TextArea id="nodeNotatnik" fx:id="obszarNotatnika" layoutY="28.0" prefHeight="270.0" prefWidth="494.0" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0" />
+	</children>
+</AnchorPane>

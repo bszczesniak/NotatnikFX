@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<anttasks:AntTask xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:anttasks="http://org.eclipse.fx.ide.jdt/1.0" buildDirectory="${project}/build" cssToBin="true">
+  <deploy packagingFormat="exe">
+    <application name="NotatnikFX" mainclass="pl.bjorgul.notatnikfx.aplikacja.pl.akademiakodu.zadaniametody.Main" version="1.00" toolkit="fx"/>
+    <info title="NJORGUL.NOTE" vendor="Bart&#x142;omiej Szcz&#x119;&#x15b;niak"/>
+  </deploy>
+  <signjar/>
+</anttasks:AntTask>

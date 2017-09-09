@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="NotatnikFX.jnlp">
+  <information>
+    <title>NotatnikFX</title>
+    <vendor>Bart³omiej Szczêœniak</vendor>
+    <description>NJORGUL.NOTE</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="NotatnikFX.jar" size="15022" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="0" height="0" main-class="pl.bjorgul.notatnikfx.aplikacja.Main"  name="NJORGUL.NOTE" />
+  <update check="background"/>
+</jnlp>
